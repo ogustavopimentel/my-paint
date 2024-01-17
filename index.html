@@ -6,9 +6,52 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <title>My Paint</title>
 </head>
 <body>
+
+    <section class="container">
+
+        <canvas width="900" height="600"></canvas>
+
+        <div>
+            <section class="tool-box">
+                <button class="button__tool">
+                    <span class="material-symbols-outlined">brush</span>
+                </button>
+                <button class="button__tool">
+                    <span class="material-symbols-outlined">ink_eraser</span>
+                </button>
+                <button class="button__tool">
+                    <input type="color" class="input__color">
+                </button>
+            </section>
+
+            <section class="tool-box">
+                <button class="button__size">
+                    <span class="stroke"></span>
+                </button>
+                <button class="button__size">
+                    <span class="stroke"></span>
+                </button>
+                <button class="button__size">
+                    <span class="stroke"></span>
+                </button>
+                <button class="button__size">
+                    <span class="stroke"></span>
+                </button>
+            </section>
+
+            <section class="tool-box">
+                <button class="button__tool button__clear">
+                    <span class="material-symbols-outlined">delete</span>
+                </button>
+            </section>
+        </div>
+
+    </section>
     
     <script src="./script.js"></script>
 </body>
