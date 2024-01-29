@@ -8,9 +8,11 @@ const buttonClear = document.querySelector('.button__clear');
 
 let brushSize = 50;
 
-ctx.fillStyle = '#000';
-
 let isPainting = false;
+
+inputColor.addEventListener('change', ({target}) => {
+    ctx.fillStyle = target.value;
+});
 
 canvas.addEventListener('mousedown', ({clientX, clientY}) => {
     draw(clientX, clientY);
